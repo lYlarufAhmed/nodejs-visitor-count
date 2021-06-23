@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visitor Count Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: grid;
+            grid-template-rows: auto 1fr;
+            height: 100vh;
+            font-family: sans-serif;
+        }
+
+        header {
+            background-color: #404272;
+            color: white;
+            display: flex;
+            padding: .8rem 1rem;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: .6rem;
+        }
+
+        main {
+            display: grid;
+            place-items: center;
+            background-color: mintcream;
+        }
+
+        a {
+            text-decoration: none;
+            color: wheat;
+        }
+        section{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>NodeJS</h1>
+    <nav>
+        <ul>
+            <li><a href="/home">HOME</a></li>
+            <li><a href="/product">PRODUCT</a></li>
+            <li><a href='/contact'>CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <h3>{{page_name}}</h3>
+        <small>Website visited: {{count}} time</small>
+    </section>
+</main>
+</body>
+</html>
